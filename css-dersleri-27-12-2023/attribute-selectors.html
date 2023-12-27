@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+    <link rel="stylesheet" href="attribute-selectors.css">
+</head>
+<body>
+        <!-- 7 farklı Attribute Selectors kullanımımız var 
+        
+        1- attribute özelliğiyle ulaşma  örn: a[target]
+        
+        2- Attribute Value Selector örn: [class="active"] // Classı active olan bütün elemanlara ulaşır.
+        Class isminde active dışında ikinci bir class var ise çalışmaz.     
+        
+        3- Attribute * Selector // Classı active olan bütün elemanlara ulaşır, class isminde active
+         kelimesinin geçmesi yeterli olur örn: active-text veya text-active classlarında da bir probleme neden
+         olmaz. Çalışır.       
+        
+         4- Attribute ~ Selector // Sadece active geçen kısımları alır. Birleşik yazı kabul etmez. Boşluk bırakılarak 
+         yazılan kullanımları kabul eder. active classının başta veya sonda olmasını önemsemez.   
+         
+         5- Attribute | Selector // Active classının sadece başlangıçta olduğu durumlarda çalışır. 
+         Diğer ortada veya sonda olan classlar için seçim yapmaz. Class içinde farklı bir class varsa yine seçim 
+         yapılmaz. Birleşik yazı kabul eder örn: active-text seçim yapar // active text seçim yapmaz.
+
+
+         6- Attribute ^ Selector // Active classının sadece başlangıçta olduğu durumlarda çalışır. 
+          Class içinde farklı bir class varsa da seçim yapılır.   
+         
+         7- Attribute $ Selector // Classların sonunda olduğunda seçim yapar. Class içinde farklı bir class olsada
+         kabul eder. Birleşik yazıda kabul eder örn: text-active
+        -->
+
+
+        <span class="text-active">text</span>
+
+        <nav>
+            <a href="" target="_blank">Home</a>
+            <a href="" class="active text">About</a>
+            <a href="" class="link">Contact</a>
+
+
+        </nav>
+       
+
+
+
+
+
+
+
+
+
+</body>
+</html>

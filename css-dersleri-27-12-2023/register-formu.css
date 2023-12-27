@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2E4C6d;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.signup-page{
+    padding-top: 20px;
+   
+}
+
+.signup-title{
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.signup-form{
+    width: 500px;
+    margin: auto;
+    border: 2px solid #141414;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: coral;
+}
+
+.signup-form label,
+.signup-form input:not([type="checkbox"]),
+.signup-form select{
+
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.signup-form input[type="checkbox"],
+.signup-form input[type="checkbox"] + label{
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin-top:15px; 
+}
+
+.signup-form button[type="submit"]{
+    display: block;
+    margin-top: 25px;
+    background-color: #2E4C6d;
+    padding: 7px 15px;
+    color: #fff;
+    border-radius: 8px;
+    transition: all .6s;
+    text-align: center;
+    width: 100%;
+}
+
+.signup-form button[type="submit"]:hover{
+   transform: scale(1.07); 
+}
+
+.signup-form input:not([type="checkbox"]),
+.signup-form select{
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup-form input:not([type="checkbox"]):focus,
+.signup-form select:focus{
+    outline: none;
+    background-color: #141414;
+    color: #fff;
+    border: 2px solid #ccc;
+}
+
+.signup-form input[type="checkbox"]{
+   appearance: none; 
+   width: 20px;
+   height: 20px;
+   border: 1px solid #2E4C6d;
+   vertical-align: bottom;
+   border-radius: 50%;
+}
+
+.signup-form input[type="checkbox"]:hover{
+    background-color: #2E4C6d;
+}
+
+.signup-form input[type="checkbox"]:checked{
+    background-color: coral;
+    border: 1px solid coral;
+}

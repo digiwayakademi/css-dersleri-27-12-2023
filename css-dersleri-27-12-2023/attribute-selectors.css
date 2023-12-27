@@ -1,0 +1,31 @@
+
+
+
+a[target]{
+    background-color: red;
+}
+
+/* [class="active"]{
+    background-color: blue;
+} */
+
+/* [class*="active"]{
+    background-color: blue;
+} */
+
+/* [class~="active"]{
+    background-color: blue;
+} */
+
+/* [class|="active"]{
+    background-color: blue;
+} */
+
+/* [class^="active"]{
+    background-color: blue;
+} */
+
+
+[class$="active"]{
+    background-color: blue;
+}
